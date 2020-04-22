@@ -9,7 +9,7 @@
 
 **1.下载安装auto.js**
 
-![auto.js](https://github.com/EnkanSakura/auto-cpdaily/tree/master/Image/autojs.png)
+![auto.js](https://github.com/EnkanSakura/auto-cpdaily/blob/master/img/autojs.png)
 
 **2.保存、导入并修改代码**
 
@@ -17,7 +17,7 @@
 
 或者直接copy储存库中js文件的代码，然后新建文件将代码粘贴进去
 
-![insert](https://github.com/EnkanSakura/auto-cpdaily/tree/master/Image/insert.png)
+![insert](https://github.com/EnkanSakura/auto-cpdaily/blob/master/img/insert.png)
 
 在代码起始部分修改你所在的省、市、区，然后保存，返回
 
@@ -37,7 +37,7 @@ const district = "这里填区";    //分号内填入区
 
 导入或新建文件后，在auto.js中可以看到该文件，点击小三角即可运行
 
-![run](https://github.com/EnkanSakura/auto-cpdaily/tree/master/Image/run.png)
+![run](https://github.com/EnkanSakura/auto-cpdaily/blob/master/img/run.png)
 
 **5.手动切换到今日校园app**
 
