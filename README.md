@@ -77,6 +77,22 @@ while(!click("提交"));
 // while(!click("提交"));
 ```
 
+## 进一步偷懒
+
+**1.打开auto.js，触摸cpdaily最右边的省略号，选择更多**
+
+![timer0.png](https://i.loli.net/2020/04/23/5NvShuGcoz1D8f2.png)
+
+**2.在更多里选择定时任务**
+
+![timer1.png](https://i.loli.net/2020/04/23/e5dyFmSuBzba3kL.png)
+
+**3.选择每天运行，时间根据自己喜好设置，确保在设定时间点前学校已经发布调查表即可**
+
+我设置的是中午十二点
+
+![timer2.png](https://i.loli.net/2020/04/23/bHfsh4ZXdIMvoxL.png)
+
 ## 其他说明
 
 本项目使用**MIT LICENSE**开源，转载请注明出处
