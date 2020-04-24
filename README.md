@@ -5,6 +5,14 @@
 
 **项目使用[auto.js](https://hyb1996.github.io/AutoJs-Docs/#/)脚本**
 
+<u>04/24更新</u>
+
+​	才发现auto.js从酷安下架了，GitHub上的release也没有了
+
+​	以后更新都会发布release，目前版本是[1.2](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2)，点1.2就可以去下载了
+
+​	auto.js的安装包可以去我的网站下载（服务器带宽比较小，下载速度会有点慢）
+
 ## 更新日志
 
 * 2020/04/24更新
@@ -116,6 +124,8 @@ while(!click("提交"));
 // sleep(1000);
 // while(!click("提交"));
 ```
+
+
 
 ## 进一步偷懒
 
