@@ -11,7 +11,7 @@
 
 ​	以后更新都会发布release，目前版本是[1.2](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2)，点1.2就可以去下载了
 
-​	auto.js的安装包可以去我的网站下载（服务器带宽比较小，下载速度会有点慢）
+​	auto.js的安装包可以去[我的网站](http://enkansakura.top/)下载（服务器带宽比较小，下载速度会有点慢）
 
 ## 更新日志
 
