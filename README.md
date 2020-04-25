@@ -9,11 +9,21 @@
 
 ​	才发现auto.js从酷安下架了，GitHub上的release也没有了
 
-​	以后更新都会发布release，目前版本是[1.2](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2)，点1.2就可以去下载了
+​	以后更新都会发布release，目前版本是[1.2.1](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2.1)，点链接跳转下载页面
 
 ​	auto.js的安装包可以去[我的网站](http://enkansakura.top/)下载（服务器带宽比较小，下载速度会有点慢）
 
 ## 更新日志
+
+* 2020/04/25更新
+
+  有小伙伴提交issue说运行后没有反应
+
+  然后我就检查了一下，发现我把Fill()注释掉了
+
+  ![note.png](https://i.loli.net/2020/04/25/as2FP9WUR6vzYCN.png)
+
+  失误，顺便增加锁屏检测
 
 * 2020/04/24更新
 

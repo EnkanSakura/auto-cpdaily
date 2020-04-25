@@ -3,7 +3,7 @@ const CURRENT_TIME = new Date();
 const CURRENT_DATE = CURRENT_TIME.getMonth()+1+"月"+CURRENT_TIME.getDate()+"日";   //获取日期，用于定位当日的表
 //可根据需求自行修改的常量
 const DELAY_TIME = 300;     //每次操作的缓冲时间（根据具体情况可延长或缩短）
-const PASSWORD = "";        //引号内填入密码
+const PASSWORD = "******";        //引号内填入密码
 //对应所在地的三项
 var province = "**省";      //引号内填入省
 var city = "**市";          //引号内填入市
@@ -125,11 +125,14 @@ auto.waitFor();     //等待辅助功能开启
 setScreenMetrics(1080, 1920);
 
 sleep(1000);
-Unlock();   //唤醒屏幕，解锁
+if(packageName("com.android.systemui").findOne(300))
+{
+    Unlock();   //唤醒屏幕，解锁
+}
 
 toast("即将启动今日校园");  //启动APP
 sleep(2000);
 launch("com.wisedu.cpdaily");
 sleep(5000);
 
-// Fill();     //填表
+Fill();     //填表
