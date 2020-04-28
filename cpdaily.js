@@ -1,6 +1,7 @@
 //常量定义部分
 const CURRENT_TIME = new Date();
-const CURRENT_DATE = CURRENT_TIME.getMonth()+1+"月"+CURRENT_TIME.getDate()+"日";   //获取日期，用于定位当日的表
+const CURRENT_DATE = (CURRENT_TIME.getMonth()+1)+"月"
+                    +CURRENT_TIME.getDate()+"日";   //获取日期，用于定位当日的表
 //可根据需求自行修改的常量
 const DELAY_TIME = 300;     //每次操作的缓冲时间（根据具体情况可延长或缩短）
 const PASSWORD = "";        //引号内填入密码
@@ -28,7 +29,7 @@ function Fill()     //填表
 {
     Do("消息");
     Do("辅导员通知");
-    Do(CURRENT_DATE+"学生日报信息");
+    Do("未填写 >");
     Do("请选择省或海外");
     Do(province);
     Do("确认");
