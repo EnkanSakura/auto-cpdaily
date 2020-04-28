@@ -9,11 +9,25 @@
 
 ​	才发现auto.js从酷安下架了，GitHub上的release也没有了
 
-​	以后更新都会发布release，目前版本是[1.2.1](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2.1)，点链接跳转下载页面
+​	以后更新都会发布release，目前版本是[1.2.2](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2.2)，点链接跳转下载页面
 
 ​	auto.js的安装包可以去[我的网站](http://enkansakura.top/)下载（服务器带宽比较小，下载速度会有点慢）
 
 ## 更新日志
+
+* 2020/04/28
+
+  ```javascript
+  //这里的特殊符号和一个空格" "不能删去
+  ```
+
+  谜之特殊符号消失了！
+
+  今天填表发现选完居住地就死循环
+
+  检查发现是选项中标签文本的特殊符号没了
+
+  改用```textContains("")```来代替```text("")```
 
 * 2020/04/25更新
 

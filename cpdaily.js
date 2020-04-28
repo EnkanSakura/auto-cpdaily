@@ -3,11 +3,11 @@ const CURRENT_TIME = new Date();
 const CURRENT_DATE = CURRENT_TIME.getMonth()+1+"月"+CURRENT_TIME.getDate()+"日";   //获取日期，用于定位当日的表
 //可根据需求自行修改的常量
 const DELAY_TIME = 300;     //每次操作的缓冲时间（根据具体情况可延长或缩短）
-const PASSWORD = "******";        //引号内填入密码
+const PASSWORD = "";        //引号内填入密码
 //对应所在地的三项
-var province = "**省";      //引号内填入省
-var city = "**市";          //引号内填入市
-var district = "**区";      //引号内填入区
+var province = "省";        //引号内填入省
+var city = "市";            //引号内填入市
+var district = "区";        //引号内填入区
 
 /*
 --------------------------------
@@ -38,11 +38,11 @@ function Fill()     //填表
     Do("请选择区/县或者国家");
     Do(district);
     Do("确认");
-    //这里的特殊符号和一个空格" "不能删去
-    while(!text(" 正常").findOne().parent().child(1).click());
+    
+    while(!textContains("正常").findOne().parent().child(1).click());
     Do("点击加载更多");
-    while(!text(" <37.3℃").findOne().parent().child(1).click());
-    var bottom = text(" 否").find();
+    while(!textContains("<37.3℃").findOne().parent().child(1).click());
+    var bottom = textContains("否").find();
     for(var i = 0; i < bottom.size(); i++)
     {
         bottom[i].parent().child(1).click();
@@ -65,7 +65,7 @@ function NumberPassword()    //纯数字密码
 {
     for(var i = 0; i < PASSWORD.length; i++)
     {
-        var key = PASSWORD[i].toString();
+        var key = PASSWORD[i];
         text(key).findOne().parent().click();
     }
 }
@@ -86,17 +86,11 @@ function MixedPassword()    //混合密码
 
 function Unlock()
 {
-    while(!device.isScreenOn())
-    {
-        device.wakeUp();
-        sleep(1000);
-        gesture(500, [200,960], [880,960]);
-        sleep(300);
-    }
+    gesture(500, [200,960], [880,960]);
+    sleep(300);
     if(device.release >= 7)
     {
-        
-        if(textContains("输入密码").findOnce())
+        if(desc("PIN 码区域").findOnce())
         {
             if(text("ABC").findOne())
             {
@@ -124,6 +118,11 @@ function Unlock()
 auto.waitFor();     //等待辅助功能开启
 setScreenMetrics(1080, 1920);
 
+while(!device.isScreenOn())
+{
+    device.wakeUp();
+    sleep(1000);
+}
 sleep(1000);
 if(packageName("com.android.systemui").findOne(300))
 {
