@@ -10,11 +10,23 @@
 
 ​	才发现auto.js从酷安下架了，GitHub上的release也没有了
 
-​	以后更新都会发布release，目前版本是[1.2.4](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2.4)，点链接跳转下载页面
+​	以后更新都会发布release，目前版本是[1.2.5](https://github.com/EnkanSakura/auto-cpdaily/releases/tag/1.2.5)，点链接跳转下载页面
 
 ​	auto.js的安装包可以去[我的网站](http://enkansakura.top/)下载（服务器带宽比较小，下载速度会有点慢）
 
 ## 更新日志
+
+* **2020/05/28更新**
+
+  ```javascript
+  Do("点击加载更多");
+  while(!textContains("本科").findOne().parent().child(1).click());
+  while(!textContains("内地").findOne().parent().child(1).click());
+  Do("点击加载更多");
+  while(!textContains("37.2℃").find()[1].parent().child(1).click());
+  ```
+
+  问卷大规模改动，代码微小改动
 
 * **2020/05/23更新**
 

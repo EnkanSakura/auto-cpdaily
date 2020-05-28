@@ -95,6 +95,8 @@ function Fill()     //填表
     Do("消息");
     Do("辅导员通知");
     Do("未填写");
+
+    Do("点击加载更多");
     Do("请选择省或海外");
     Do(province);
     Do("确认");
@@ -104,29 +106,32 @@ function Fill()     //填表
     Do("请选择区/县或者国家");
     Do(district);
     Do("确认");
-    
-    while(!textContains("正常").findOne().parent().child(1).click());
     Do("点击加载更多");
-    while(!textContains("37.3℃").find()[1].parent().child(1).click());
+    while(!textContains("本科").findOne().parent().child(1).click());
+    while(!textContains("内地").findOne().parent().child(1).click());
+    Do("点击加载更多");
+    while(!textContains("37.2℃").find()[1].parent().child(1).click());
     var bottom = textContains("否").find();
     var b_end = bottom.size() - 1;
     for(var i = 0; i < b_end; i++)
     {
         bottom[i].parent().child(1).click();
     }
-    if(HAVE_CODE)
-    {
-        bottom[b_end].parent().parent().child(0).child(1).click();
-        while(!textContains(CODE_COLOR).findOne().parent().child(1).click());
-    }
-    else
-    {
-        bottom[b_end].parent().parent().child(0).child(0).click();
-        while(!textContains("未申请").findOne().parent().child(1).click());
-    }
-    Do("提交给辅导员");
-    sleep(1000);
-    Do("提交");
+    bottom[b_end].parent().parent().child(0).child(1).click();
+    // if(HAVE_CODE)
+    // {
+    //     bottom[b_end].parent().parent().child(0).child(1).click();
+    //     while(!textContains(CODE_COLOR).findOne().parent().child(1).click());
+    // }
+    // else
+    // {
+    //     bottom[b_end].parent().parent().child(0).child(0).click();
+    //     while(!textContains("未申请").findOne().parent().child(1).click());
+    // }
+
+    // Do("提交给辅导员");
+    // sleep(1000);
+    // Do("提交");
 }
 
 //脚本执行部分
